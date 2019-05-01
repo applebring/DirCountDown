@@ -1,17 +1,18 @@
 ## 自定义倒计时组件
 
 ###component install 组件引入
-
+```
 npm/cnpm install --save-dev dircountdown
+```
 ###file of vue reference vue文件引入
 ```
 import CountDown from 'dircountdown'
 components:{CountDown}
-````
+```
 ##html reference       html引入
 ```
  <dir-clock :start="startSecond" end="0" style="color:#000;" v-on:endcallback="endFn" :autoshow='false' splitsymbol="时-分-秒" :autostart="false" ref="countdown"></dir-clock>
-
+```
 ###props 属性
 |Props属性    |describe属性描述|
 |------|:------|
