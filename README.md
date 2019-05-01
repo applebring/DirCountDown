@@ -17,8 +17,7 @@ Props属性|describe属性描述
 start| 开始时间(以秒为单位如一分钟则为3600) starttime（in seconds,like a minute is 3600）
 end|结束时间 endTime                                                                  
 endcallback|当时间为0时的回调函数   callback function when time ends with zero                 
-autoshow|当小时为0时或者小时分钟都为0时，是否隐藏例如00：00：30则显示为30
-             |when hour or minute is zero,they will be hide,like 00:00:30 is 30                
+autoshow|当小时为0时或者小时分钟都为0时，是否隐藏例如00：00：30则显示为30 when hour or minute is zero,they will be hide,like 00:00:30 is 30                
 splitsymbol|时分秒分割单位 (时-分-秒||：-：-：)       symbol to split time                      
 autostart|是否一进入就进行倒计时     whether to start when enter the page                    
 
