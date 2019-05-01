@@ -1,4 +1,4 @@
-## dircountdown
+## 自定义倒计时组件
 
 #component install 组件引入
 npm/cnpm install --save-dev dircountdown
@@ -6,10 +6,12 @@ npm/cnpm install --save-dev dircountdown
 import CountDown from 'dircountdown'
 components:{CountDown}
 ##html reference       html引入
+```
  <dir-clock :start="startSecond" end="0" style="color:#000;" v-on:endcallback="endFn" :autoshow='false' splitsymbol="时-分-秒" :autostart="false" ref="countdown"></dir-clock>
+ ```
 ##props 属性
 Props属性    |describe属性描述
--|-
+-|-:
 start        |开始时间(以秒为单位如一分钟则为3600) starttime（in seconds,like a minute is 3600）   |
 end          |结束时间 endTime                                                                   |
 endcallback  |当时间为0时的回调函数   callback function when time ends with zero                  |
@@ -20,6 +22,7 @@ autostart    |是否一进入就进行倒计时     whether to start when enter 
 
 ##Demo
 app.vue
+```
 <template>
   <div id="app">
     <count-down :start="startSecond" end="0" style="color:#000;" v-on:endcallback="endFn" :autoshow='false' splitsymbol="时-分-秒" :autostart="false" ref="countdown"></count-down>
@@ -58,7 +61,7 @@ export default {
   margin-top: 60px;
 }
 </style>
-
+```
 ## Build Setup
 
 ``` bash
