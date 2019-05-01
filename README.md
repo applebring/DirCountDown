@@ -8,8 +8,8 @@ components:{CountDown}
 ##html reference       html引入
  <dir-clock :start="startSecond" end="0" style="color:#000;" v-on:endcallback="endFn" :autoshow='false' splitsymbol="时-分-秒" :autostart="false" ref="countdown"></dir-clock>
 ##props 属性
-|Props属性    |describe属性描述
--|-|
+Props属性    |describe属性描述
+-|-
 start        |开始时间(以秒为单位如一分钟则为3600) starttime（in seconds,like a minute is 3600）   |
 end          |结束时间 endTime                                                                   |
 endcallback  |当时间为0时的回调函数   callback function when time ends with zero                  |
