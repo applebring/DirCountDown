@@ -1,9 +1,9 @@
 ## 自定义倒计时组件
 
-####component install 组件引入
+###component install 组件引入
 
 npm/cnpm install --save-dev dircountdown
-#####file of vue reference vue文件引入
+###file of vue reference vue文件引入
 ```
 import CountDown from 'dircountdown'
 components:{CountDown}
@@ -12,9 +12,9 @@ components:{CountDown}
 ```
  <dir-clock :start="startSecond" end="0" style="color:#000;" v-on:endcallback="endFn" :autoshow='false' splitsymbol="时-分-秒" :autostart="false" ref="countdown"></dir-clock>
 
-####props 属性
+###props 属性
 |Props属性    |describe属性描述|
-|------|------|
+|------|:------|
 |start        |开始时间(以秒为单位如一分钟则为3600) starttime（in seconds,like a minute is 3600）|  
 |end          |结束时间 endTime                                                                |   
 |endcallback  |当时间为0时的回调函数   callback function when time ends with zero           |       
@@ -23,7 +23,7 @@ components:{CountDown}
 |splitsymbol  |时分秒分割单位 (时-分-秒||：-：-：)       symbol to split time   |                   
 |autostart    |是否一进入就进行倒计时     whether to start when enter the page   |                 
 
-####Demo
+###Demo
 ```
 app.vue
 <template>
